@@ -1,0 +1,190 @@
+:root {
+    background: rgba(103,75,176,255);   
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+}
+/* -----------------------------------general and mobile screen layout----------------------------------------------------  */ 
+body {
+    background-image: url('images/bg-mobile.svg');  
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    margin: auto;
+}
+#container {
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 125px;
+    align-content: left;
+    display: block;
+}
+.win_pic {
+    margin-top: 65px;
+    margin-bottom: 60px;
+    width: 325px;
+}
+.content_right > * {
+    text-align: center;
+}
+
+.content > * {
+    text-align: center;
+    color: white;
+ }
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(103,75,176,255);
+    width: 205px;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;    
+}
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;  
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;   
+}
+.icon_fb, .icon_tw, .icon_ig {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+svg {
+    width: 13px;
+    height: 13px;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 17px; 
+    
+} 
+.icons_pattern {
+    width: 100%;
+}
+ svg:hover {
+    color:  hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+} 
+ 
+
+
+.attribution { font-size: 11px; text-align: center;font-family: 'Open Sans', sans-serif; }
+.attribution a{ color:hsl(300, 69%, 71%) ;}
+
+
+
+/* -----------------------------------desktop layout----------------------------------------------------  */  
+@media screen and (min-width: 1200px) {  
+    body {
+        position: relative;
+        margin: auto;
+    }
+    #container {
+        padding: 60px 94px 0px 75px;
+        display: flex;   
+    }
+    body {
+      background-image: url('images/bg-desktop.svg');
+      min-width: 100%; 
+      /* z-index: 10; */
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        position: relative;
+       
+    }
+    .content_right {
+        order: 2;
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        margin-top: 150px;  
+    }
+    .logo {
+        width: 265px;
+        height: 45px;
+        margin-left: -25px;
+        display: block;
+    }
+     .win_pic {
+        width: 700px;
+        margin-right: 58px;
+        order: 1;
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        margin-top: 85px;
+    } 
+    .text h1 {
+        font-size: 2.188rem;
+        line-height: 3.5rem;
+        text-align: left;
+    }
+    .text p{
+        text-align: left;
+        line-height: 1.875rem;
+        margin-bottom: 27px;
+    }
+    .button {
+        width: 205px;
+        line-height: 60px;
+        border-radius: 30px;
+        font-size: 1.313rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    } 
+    form {
+        display: flex;
+        justify-content: left;
+    }
+    .icons {
+        margin-bottom: 0px;  
+        justify-content: right;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+        border-radius: 20px; 
+        color: white;  
+        border: 1.5px; 
+        border: 1.5px solid white; 
+    } 
+    .icons_pattern{
+        margin-bottom: 90px;
+    }
+  }
